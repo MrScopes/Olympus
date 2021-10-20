@@ -1,0 +1,13 @@
+name: Olympus
+version: ${project.version}
+main: us.olympusmc.olympus.Olympus
+api-version: 1.17
+authors: [ MrScopes ]
+description: Plugin made for OlympusMC
+commands:
+  color:
+    description: Change your username color.
+    usage: Available colors are red, green, and blue.
+  name:
+    description: Set your ingame name.
+    usage: You must choose a name that isn't taken to be set.
