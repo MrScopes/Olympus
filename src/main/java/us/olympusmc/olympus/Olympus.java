@@ -1,8 +1,8 @@
 package us.olympusmc.olympus;
 
-import us.olympusmc.olympus.commands.CommandHandler;
-import us.olympusmc.olympus.listeners.ListenerHandler;
 import org.bukkit.plugin.java.JavaPlugin;
+import us.olympusmc.olympus.handlers.CommandHandler;
+import us.olympusmc.olympus.handlers.ListenerHandler;
 
 public final class Olympus extends JavaPlugin {
 

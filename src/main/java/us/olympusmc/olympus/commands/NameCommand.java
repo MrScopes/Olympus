@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import us.olympusmc.olympus.OlympusPlayer;
 
-public class Name implements CommandExecutor {
+public class NameCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         OlympusPlayer player = new OlympusPlayer((Player) sender);

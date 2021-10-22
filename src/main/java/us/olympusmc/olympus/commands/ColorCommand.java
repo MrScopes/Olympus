@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 import us.olympusmc.olympus.OlympusPlayer;
 import us.olympusmc.olympus.Utilities;
 
-public class Color implements CommandExecutor {
+public class ColorCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         OlympusPlayer player = new OlympusPlayer((Player) sender);

@@ -6,8 +6,18 @@ authors: [ MrScopes ]
 description: Plugin made for OlympusMC
 website: https://github.com/MrScopes/Olympus
 commands:
+  help:
+    description: Get help.
   color:
     description: Change your username color.
     usage: You must choose a support color.
   name:
     description: Set your ingame name.
+  message:
+    aliases: msg
+    description: Message a player.
+    usage: /msg <player> <message>
+  reply:
+    aliases: r
+    description: Reply to the last person who sent you a message.
+    usage: /r <message>

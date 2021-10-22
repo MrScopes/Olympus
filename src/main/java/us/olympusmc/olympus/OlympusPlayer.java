@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class OlympusPlayer  {
-    Player player;
+    public Player player;
 
     public OlympusPlayer(Player player) {
         this.player = player;

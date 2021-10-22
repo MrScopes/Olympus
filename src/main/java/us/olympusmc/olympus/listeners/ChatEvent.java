@@ -7,7 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import us.olympusmc.olympus.OlympusPlayer;
 
-public class Chat implements Listener {
+public class ChatEvent implements Listener {
     @EventHandler
     public void onPlayerChat(AsyncChatEvent event) {
         event.renderer((source, sourceDisplayName, message, viewer) ->

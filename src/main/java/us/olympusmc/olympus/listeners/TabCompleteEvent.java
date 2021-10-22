@@ -6,7 +6,7 @@ import org.bukkit.event.Listener;
 
 import java.util.ArrayList;
 
-public class TabComplete implements Listener {
+public class TabCompleteEvent implements Listener {
     @EventHandler
     public void onTabComplete(AsyncTabCompleteEvent event) {
         if (event.getBuffer().split(" ")[0].equals("/color")) {
