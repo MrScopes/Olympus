@@ -7,8 +7,8 @@ public record CommandHandler(Olympus plugin) {
     public CommandHandler(Olympus plugin) {
         this.plugin = plugin;
 
-        registerCommand("color", new ColorCommand());
-        registerCommand("name", new NameCommand());
+        registerCommand("color", new Color());
+        registerCommand("name", new Name());
     }
 
     private void registerCommand(String command, CommandExecutor executor) {

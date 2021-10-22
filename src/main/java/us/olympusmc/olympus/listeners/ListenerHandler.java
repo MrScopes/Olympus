@@ -8,8 +8,9 @@ public record ListenerHandler(Olympus plugin) {
     public ListenerHandler(Olympus plugin) {
         this.plugin = plugin;
 
-        registerEvent(new PlayerLoginListener());
-        registerEvent(new PlayerChatListener());
+        registerEvent(new Login());
+        registerEvent(new Chat());
+        registerEvent(new TabComplete());
     }
 
     private void registerEvent(Listener event) {

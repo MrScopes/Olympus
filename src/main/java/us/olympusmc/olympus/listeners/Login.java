@@ -1,15 +1,13 @@
 package us.olympusmc.olympus.listeners;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
-import us.olympusmc.olympus.Utilities;
+import us.olympusmc.olympus.OlympusPlayer;
 
-public class PlayerLoginListener implements Listener {
+public class Login implements Listener {
     @EventHandler
     public void onPlayerLogin(PlayerLoginEvent event) {
-        Player player = event.getPlayer();
-        Utilities.updatePlayer(player, false);
+        new OlympusPlayer(event.getPlayer()).update();
     }
 }
