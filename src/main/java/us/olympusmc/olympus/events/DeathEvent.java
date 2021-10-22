@@ -1,4 +1,4 @@
-package us.olympusmc.olympus.listeners;
+package us.olympusmc.olympus.events;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

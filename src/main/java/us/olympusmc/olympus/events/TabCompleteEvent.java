@@ -1,4 +1,4 @@
-package us.olympusmc.olympus.listeners;
+package us.olympusmc.olympus.events;
 
 import com.destroystokyo.paper.event.server.AsyncTabCompleteEvent;
 import org.bukkit.event.EventHandler;

@@ -1,4 +1,4 @@
-package us.olympusmc.olympus.listeners;
+package us.olympusmc.olympus.events;
 
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.text.Component;
