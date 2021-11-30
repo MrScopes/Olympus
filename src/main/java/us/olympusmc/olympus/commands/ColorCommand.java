@@ -3,6 +3,7 @@ package us.olympusmc.olympus.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import us.olympusmc.olympus.OlympusPlayer;
 import us.olympusmc.olympus.Utilities;
@@ -10,6 +11,11 @@ import us.olympusmc.olympus.Utilities;
 public class ColorCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (sender instanceof ConsoleCommandSender) {
+            sender.sendMessage("Command only useable by players.");
+            return false;
+        }
+
         OlympusPlayer player = new OlympusPlayer((Player) sender);
 
         if (args.length == 0) {

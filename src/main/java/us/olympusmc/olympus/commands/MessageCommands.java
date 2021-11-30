@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import us.olympusmc.olympus.OlympusPlayer;
 
@@ -13,6 +14,11 @@ import java.util.UUID;
 public class MessageCommands implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (sender instanceof ConsoleCommandSender) {
+            sender.sendMessage("Command only useable by players.");
+            return false;
+        }
+
         OlympusPlayer player = new OlympusPlayer((Player) sender);
 
         if (cmd.getName().equals("message")) {

@@ -10,7 +10,7 @@ commands:
     description: Get help.
   color:
     description: Change your username color.
-    usage: You must choose a support color.
+    usage: You must choose a supported color.
   name:
     description: Set your ingame name.
   message:
