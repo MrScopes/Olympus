@@ -13,7 +13,7 @@ public class ColorCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
             sender.sendMessage("Command only useable by players.");
-            return false;
+            return true;
         }
 
         OlympusPlayer player = new OlympusPlayer((Player) sender);

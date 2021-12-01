@@ -12,7 +12,7 @@ public class NameCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
             sender.sendMessage("Command only useable by players.");
-            return false;
+            return true;
         }
 
         OlympusPlayer player = new OlympusPlayer((Player) sender);
@@ -20,6 +20,11 @@ public class NameCommand implements CommandExecutor {
         if (args.length == 0) {
             player.resetName();
             player.sendColored("&7Your new name is " + player.displayName() + "&7.");
+            return true;
+        }
+
+        if (args[0].length() > 16) {
+            player.sendColored("&cYour name must be shorter than 16 characters");
             return true;
         }
 
