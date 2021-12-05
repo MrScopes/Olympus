@@ -34,7 +34,7 @@ public class MessageCommands implements CommandExecutor {
             target.sendColored("&7From &b" + player.displayName() + "&8: &f" + message);
             player.sendColored("&7To &b" + target.displayName() + "&8: &f" + message);
 
-            target.setValue("lastSender", player.player.getUniqueId());
+            target.setValue("lastSender", player.player.getUniqueId().toString());
         } else if (cmd.getName().equals("reply")) {
             String lastSender = player.getValue("lastSender");
             if (lastSender == null) {

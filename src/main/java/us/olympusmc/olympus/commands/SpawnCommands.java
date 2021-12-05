@@ -1,5 +1,6 @@
 package us.olympusmc.olympus.commands;
 
+import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,6 +22,7 @@ public class SpawnCommands implements CommandExecutor {
         FileConfiguration config = Olympus.get().getConfig();
 
         if (cmd.getName().equals("spawn")) {
+            player.player.setGameMode(GameMode.CREATIVE);
             player.player.teleport(config.getLocation("spawn"));
             player.sendColored("&aTeleporting to spawn...");
         } else if (cmd.getName().equals("setspawn")) {
